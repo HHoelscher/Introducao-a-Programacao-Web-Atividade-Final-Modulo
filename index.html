@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Página Inicial</title>
+  </head>
+  <body>
+    <div class="loginArea">
+      <div class="dataWindow">
+        <h3>Faça seu login</h3>
+        <form>
+          <input
+            type="text"
+            name="emailLogin"
+            id="emailLogin"
+            placeholder="Exemplo@gmail.com"
+            autofocus
+          />
+
+          <input
+            type="password"
+            name="passwordLogin"
+            id="passwordLogin"
+            placeholder="Sua senha"
+          />
+
+          <button type="submit" id="enter" class="btn" onclick="signUp(event)">
+            Entrar
+          </button>
+        </form>
+        <p>
+          Ainda não possui uma conta?
+          <a href="/register.html">Clique aqui </a>para criar a sua.
+        </p>
+      </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>

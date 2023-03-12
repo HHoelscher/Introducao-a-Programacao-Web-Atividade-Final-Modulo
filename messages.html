@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Meus Recados</title>
+  </head>
+  <body>
+      <div class="message-page">
+        <button id="exit" onclick="logOut()">Sair ↺</button>
+        <h3>Meus recados 📄</h3>
+
+        <div class="messageCreateArea">
+          <form >
+            <input type="text" id="messageId" style="display: none" />
+
+            <label for="message" id="labelMessage">Título do Recado</label>
+            <input
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Defina um título"
+              required
+            />
+
+            <label for="description" id="labelDescription">Descrição</label>
+            <input
+              type="text"
+              name="description"
+              id="description"
+              placeholder="Informe uma descrição"
+              required
+            />
+
+            <button
+              type="submit"
+              id="saveMessage"
+              onclick="createMessage(event)"
+            >
+              Salvar
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <hr />
+
+      <div id="messageTable">
+        <table>
+          <thead>
+            <tr>
+              <th class="theader">#</th>
+              <th class="theader">Título</th>
+              <th class="theader">Descrição</th>
+              <th class="theader">Ação</th>
+            </tr>
+          </thead>
+
+          <tbody id="listMessages"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="/js/messages.js"></script>
+  </body>
+</html>

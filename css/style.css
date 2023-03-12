@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #092d68;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.loginArea {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataWindow {
+  background-color: #041633;
+  color: white;
+  width: 350px;
+  height: 320px;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.dataWindow form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*Cadastro*/
+
+.registerArea {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  align-items: center;
+  padding-left: 5px;
+  height: 40px;
+  outline: none;
+  font-size: 15px;
+}
+
+.dataWindow button {
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+form button:hover {
+  background-color: rgb(99, 167, 99);
+  cursor: pointer;
+}
+#back,
+#cancelEditMessage {
+  background-color: aliceblue;
+}
+#back:hover,
+#cancelEditMessage:hover {
+  background-color: rgb(156, 161, 166);
+}
+
+.dataWindow p {
+  margin-top: 10px;
+}
+
+.dataWindow a {
+  text-decoration: none;
+  color: rgb(172, 40, 159);
+}
+
+/* recados */
+
+.message-page h3 {
+  font-size: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+}
+
+#exit {
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: lightcoral;
+  font-weight: bold;
+}
+#exit:hover {
+  cursor: pointer;
+  background-color: rgb(149, 78, 78);
+}
+
+.messageCreateArea {
+  background-color: #041633;
+  display: flex;
+  flex-direction: column;
+  padding-left: 90px;
+  /* justify-content: center; */
+  width: 90%;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+
+#message,
+#description {
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 500px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: none;
+}
+
+#labelMessage,
+#labelDescription {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+/*Botão Salvar*/
+#saveMessage {
+  max-width: 100px;
+  width: 100%;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(7, 152, 210);
+  font-weight: bold;
+}
+#saveMessage:hover {
+  cursor: pointer;
+  background-color: rgb(3, 103, 143);
+}
+
+/* tabela */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  font-size: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #000000;
+  color: white;
+}
+
+tr:nth-child(even):hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+tr:nth-child(odd):hover {
+  background-color: #031533;
+  color: white;
+}
+/*botão editar e deletar*/
+
+#delete,
+#edit {
+  border-radius: 5px;
+  border: none;
+  width: 60px;
+  height: 30px;
+  font-weight: bold;
+}
+
+#delete:hover,
+#edit:hover,
+#saveMessageEdited:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#delete {
+  background-color: rgb(255, 60, 60);
+}
+#edit,
+#saveMessageEdited {
+  background-color: rgb(60, 255, 70);
+}
+
+/* botão editar e cancelar */
+
+.editMessagePage {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.editMessageArea {
+  background-color: #041633;
+  color: white;
+  width: 350px;
+  height: 350px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.editMessageArea form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#saveMessageEdited,
+#cancelEditMessage {
+  border-radius: 5px;
+  border: none;
+  width: 60px;
+  height: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+#labelTitleEdit,
+#labelDescriptionEdit {
+  margin-top: 20px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Edite seu Recado</title>
+  </head>
+  <body>
+    <div class="editMessagePage">
+      <div class="editMessageArea">
+        <h3>Edite seu Recado 🖊</h3>
+
+        <form>
+          <label for="titleEdit" id="labelTitleEdit">Título</label>
+          <input type="text" id="titleEdit" name="titleEdit" />
+
+          <label for="descriptionEdit" id="labelDescriptionEdit"
+            >Descrição</label
+          >
+          <input type="text" id="descriptionEdit" name="descriptionEdit" />
+
+          <button type="submit" id="saveMessageEdited" onclick="update(event)">
+            Salvar
+          </button>
+          <a href="/messages.html"
+            ><button type="button" id="cancelEditMessage">Cancelar</button></a
+          >
+        </form>
+      </div>
+    </div>
+
+    <script src="/js/editMessage.js"></script>
+  </body>
+</html>
